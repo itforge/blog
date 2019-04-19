@@ -1,7 +1,7 @@
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "IT Forge"
-baseurl = "https://itforge.vforge.net/"
+baseurl = "https://www.itforge.nl/"
 theme = "stip"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
