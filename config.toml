@@ -1,0 +1,25 @@
+languageCode = "en-us"
+title = "IT Forge"
+baseurl = "https://www.itforge.nl/"
+theme = "stip"
+
+[Author]
+    name = "Leander Janssen"
+    bio = "Freelance Cloud/DevOps Solutions Engineer"
+
+[params]
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/leanderjanssen/"
+
+    [[params.links]]
+        icon = "linkedin"
+        title = "LinkedIn"
+        url = "https://www.linkedin.com/in/leanderjanssen/"
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:info@itforge.nl"

@@ -1,2 +1,4 @@
-# blog
-IT Forge blog
+# IT Forge blog
+https://www.itforge.nl
+
+powered by Hugo
