@@ -1,7 +1,9 @@
-languageCode = "en-us"
+languageCode = "en"
+defaultContentLanguage = "en"
 title = "IT Forge"
 baseurl = "https://www.itforge.nl/"
 theme = "stip"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
 [Author]
     name = "Leander Janssen"
