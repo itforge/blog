@@ -14,8 +14,8 @@ theme = "nix"
     HeaderUsername = "leander"
     HeaderHostname = "itforge.nl"
     About = """
-    Freelance Cloud/DevOps Solutions Engineer<br>
-    I provide consultancy, support and design services in the following areas:<br>
+    Freelance Cloud/DevOps Solutions Engineer\\
+    I provide consultancy, support and design services in the following areas:\\
     """
     ProfilePicture  = "https://www.itforge.nl/images/portrait.jpg"
     GithubID = "leanderjanssen/"
