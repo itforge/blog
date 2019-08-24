@@ -2,7 +2,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "IT Forge"
 baseurl = "https://www.itforge.nl/"
-theme = "stip"
+theme = "nix"
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
 [Author]
@@ -10,18 +10,11 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
     bio = "Freelance Cloud/DevOps Solutions Engineer"
 
 [params]
-    [[params.links]]
-        icon = "github"
-        title = "Github"
-        url = "https://github.com/leanderjanssen/"
-
-    [[params.links]]
-        icon = "linkedin"
-        title = "LinkedIn"
-        url = "https://www.linkedin.com/in/leanderjanssen/"
-
-    [[params.links]]
-        iconset = "fas"
-        icon = "envelope"
-        title = "E-mail"
-        url = "mailto:info@itforge.nl"
+    Name = "Leander Janssen"
+    HeaderUsername = "leander"
+    HeaderHostname = "itforge.nl"
+    About = "Freelance Cloud/DevOps Solutions Engineer"
+    ProfilePicture  = "https://s.gravatar.com/avatar/3e89f9dd7e69fa1ae3a82abc712c8d88?s=80"
+    GithubID = "https://github.com/leanderjanssen/"
+    LinkedInID = "https://www.linkedin.com/in/leanderjanssen/"
+    Email = "mailto:info@itforge.nl"
