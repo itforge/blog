@@ -14,7 +14,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
     HeaderUsername = "leander"
     HeaderHostname = "itforge.nl"
     About = "Freelance Cloud/DevOps Solutions Engineer"
-    ProfilePicture  = "https://s.gravatar.com/avatar/3e89f9dd7e69fa1ae3a82abc712c8d88?s=80"
+    ProfilePicture  = "https://www.itforge.nl/images/portrait.jpg"
     GithubID = "https://github.com/leanderjanssen/"
     LinkedInID = "https://www.linkedin.com/in/leanderjanssen/"
     Email = "mailto:info@itforge.nl"
