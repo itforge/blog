@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 title = "IT Forge"
 baseurl = "https://www.itforge.nl/"
 theme = "nix"
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+#disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
 [Author]
     name = "Leander Janssen"
