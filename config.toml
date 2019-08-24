@@ -13,7 +13,10 @@ theme = "nix"
     Name = "Leander Janssen"
     HeaderUsername = "leander"
     HeaderHostname = "itforge.nl"
-    About = "Freelance Cloud/DevOps Solutions Engineer<p>I provide consultancy, support and design services in the following areas:</p>"
+    About = """
+    Freelance Cloud/DevOps Solutions Engineer<br>
+    I provide consultancy, support and design services in the following areas:<br>
+    """
     ProfilePicture  = "https://www.itforge.nl/images/portrait.jpg"
     GithubID = "leanderjanssen/"
     LinkedInID = "leanderjanssen/"
