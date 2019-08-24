@@ -1,43 +1,41 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{- if .IsHome }}
-        <meta name="description" content="{{ .Site.Params.Description }}">
-    {{- else if .Description }}
-        <meta name="description" content="{{ .Description }}">
-    {{- end }}
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+{{ hugo.Generator }}
 
-    <title>
-        {{- if .IsHome }}
-            {{ .Site.Title }}
-        {{- else }}
-            {{ .Title }} &middot; {{ .Site.Title }}
-        {{- end }}
-    </title>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
-    <!-- CSS -->
-    {{- $inServerMode	:= .Site.IsServer }}
-    {{- $cssTarget		:= "css/style.css" }}
-    {{- $cssOptions		:= cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}		
-    {{- $style			:= resources.Get "scss/stip.scss" | resources.ExecuteAsTemplate "style.hallo.scss" . | toCSS $cssOptions }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+<!-- Bootstrap minified CSS and JS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <style>
-        body {
-            background: url('{{ "images/background.jpg" | absURL }}');
-        }    
-    </style>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
-    <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ "css/nix.css" | absURL }}">
 
-    <!-- RSS -->
-    <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-</head>
+<!-- favicon -->
+{{ with .Site.Params.Favicon }}
+<link rel="shortcut icon" href="{{ . }}">
+{{ end }}
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Inconsolata%7COpen+Sans%7CConcert+One" rel="stylesheet">
+
+<!-- Google Analytics -->
+{{ with .Site.Params.GoogleAnalytics }}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', '{{.}}', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+{{ end }}
+
+{{ partial "head-custom.html" . }}
