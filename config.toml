@@ -6,8 +6,8 @@ theme = "nix"
 #disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
 [Author]
-    name = "Leander Janssen"
-    bio = "Freelance Cloud/DevOps Solutions Engineer"
+    name = "IT Forge"
+    bio = "Native Clou and DevOps Solutions Engineers"
 
 [params]
     Name = "Leander Janssen"
