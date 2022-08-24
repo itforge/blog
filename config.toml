@@ -7,24 +7,24 @@ theme = "nix"
 
 [Author]
     name = "IT Forge"
-    bio = "Native Clou and DevOps Solutions Engineers"
+    bio = "Native Cloud and DevOps Solutions Engineers"
 
 [params]
-    Name = "Leander Janssen"
-    HeaderUsername = "leander"
+    Name = "IT Forge"
+    HeaderUsername = "info"
     HeaderHostname = "itforge.nl"
     About = """
-    We provide consultancy, support and design services in the following areas: 
-
-    - Cloud (Azure, AWS, Google)
-    - Linux (Red Hat, Ubuntu, Debian)
-    - Container solutions (Docker, Kubernetes)
-    - Automation (Terraform, Ansible, Puppet, Bash, Python)
-    - CI/CD (Github Actions, Gitlab CI, Jenkins)
-    - Virtualization (KVM, VMWare)
-
-    We also employ certified and accredited trainers for Docker, Hashicorp and Kubernetes.
-    We can also deliver various trainings and workshops in the container technology space.
+We provide consultancy, support and design services in the following areas:  
+  
+- Cloud (Azure, AWS, Google)  
+- Linux (Red Hat, Ubuntu, Debian)  
+- Container solutions (Docker, Kubernetes)  
+- Automation (Terraform, Ansible, Puppet, Bash, Python)  
+- CI/CD (Github Actions, Gitlab CI, Jenkins)  
+- Virtualization (KVM, VMWare)  
+  
+We also employ certified and accredited trainers for Docker, Hashicorp and Kubernetes.  
+We can also deliver various trainings and workshops in the container technology space.
     """
     ProfilePicture  = "https://www.itforge.nl/images/itforge.png"
     GithubID = "leanderjanssen/"
