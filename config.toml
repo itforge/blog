@@ -14,12 +14,19 @@ theme = "nix"
     HeaderUsername = "leander"
     HeaderHostname = "itforge.nl"
     About = """
-    Hi, I'm a Freelance Cloud/DevOps Solutions Engineer.
-    I provide consultancy, support and design services for cloud, container and linux environments.
-    As a certified and accredited trainer for Docker, Kubernetes and Hashicorp I can also deliver 
-    various trainings and workshops in the container technology space.
+    We provide consultancy, support and design services in the following areas: 
+
+    - Cloud (Azure, AWS, Google)
+    - Linux (Red Hat, Ubuntu, Debian)
+    - Container solutions (Docker, Kubernetes)
+    - Automation (Terraform, Ansible, Puppet, Bash, Python)
+    - CI/CD (Github Actions, Gitlab CI, Jenkins)
+    - Virtualization (KVM, VMWare)
+
+    We also employ certified and accredited trainers for Docker, Hashicorp and Kubernetes.
+    We can also deliver various trainings and workshops in the container technology space.
     """
-    ProfilePicture  = "https://www.itforge.nl/images/portrait.jpg"
+    ProfilePicture  = "https://www.itforge.nl/images/itforge.png"
     GithubID = "leanderjanssen/"
     LinkedInID = "leanderjanssen/"
     Email = "info@itforge.nl"
